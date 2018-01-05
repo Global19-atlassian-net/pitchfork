@@ -1,8 +1,37 @@
+export VERBOSE=1
 ## What we use internally
 #PREFIX        = /opt/pacbio
 #WORKDIR       = /media/ssd_drive/pf/workspace
 #HAVE_CCACHE   = /opt/software/c/ccache/3.2.3/bin/ccache
 #HAVE_ZLIB     = /opt/software/z/zlib/1.2.8-cloudflare
+#
+bam2fastx_VERSION        = f7b0ab039ef3aa3f325d9c0ea98243d8a2bf41b9
+barcoding_VERSION        = 6e793084fffe0f6293c90a81fd427263e2e4e53b
+bax2bam_VERSION          = 3c276a545903fed22324a796e80cce15da1dcaa6
+blasr_VERSION            = 4323a529c40349e2295258f367385d0618d6fb83
+unanimity_VERSION        = a54f14a68ce56a8443aca95089c440df8f7d1c72
+ConsensusCore_VERSION    = 5fe2719aacaa5acd8da9587285d5763e3c57a774
+daligner_VERSION         = 4a46977c29b91c3bd81b2bd471e381e4e6486b8f
+damasker_VERSION         = 5a655ec541c7e777c397bd5cc98b9239e905a1dd
+dazzdb_VERSION           = 983cd6bfd78473cd90b53a11616b37f38ee34ffe
+dextractor_VERSION       = 670508fa1c33361ad5ee185293a19ac75d32dc41
+falcon_kit_VERSION       = 560fc92e4b645b32e4c094e9ec64907c3e150458
+pbfalcon_VERSION         = 768504ae2d6cadca4de23ff2f8c2fb57cdb88703
+falcon_polish_VERSION    = 0d14c30bf0cd68a64e1607f29d0cc11e8e3269a7
+GenomicConsensus_VERSION = 81d65179f8578dd8f92f40772daaa21d702a7f18
+kineticsTools_VERSION    = 18c8c1971ee859a5bee2441efc71bf405d4aeaa1
+blasr_libcpp_VERSION     = e0dea2f119f966d63aea93630578b2bde365e0c8
+pbalign_VERSION          = d5b466730039fa9d857911bcccc2d834e0108927
+pbbam_VERSION            = 8c52e7986c93c12f75ad1e210c06533887d748ee
+pbcommand_VERSION        = 8994fe00d9b35dbe98cb11285e699fb576b31c04
+pbcopper_VERSION         = fbf4137883e7e87b609796c94915ab9a4197a5ba
+pbcore_VERSION           = f370c2d89fd293bf4a6212f965a37913384c1958
+pbcoretools_VERSION      = fbb61b66bce1bab8d06ca422af96a69d64ef42b4
+pbdagcon_VERSION         = 8f1a59d796093fccd986375ef642b6628ff2a7db
+pbreports_VERSION        = 2d039ec50152873dd07f1fd905df9e9ec919ffa6
+pbsmrtpipe_VERSION       = 2915ba7a9461d87f66e008020bf42ac0a202f176
+pbtranscript_VERSION     = 690a67c5eb01913b94160ba7ffe90fa255a70982
+pypeFLOW_VERSION         = ebd42cc48472296ad858817ec53cc8393d1be57b
 ##             For OSX, ZLIB can be installed to /usr via xcode-select --install
 #HAVE_PYTHON   = /opt/python-2.7.9/bin/python
 #HAVE_OPENBLAS = /opt/software/o/openblas/0.2.14
