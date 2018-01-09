@@ -2,7 +2,7 @@ include ../../../mk/pitchfork.mk
 
 # Local variables
 _NAME    = htslib
-_VERSION = 1.3.2
+_VERSION = 1.6
 _FILE    = $(_NAME)-$(_VERSION).tar.bz2
 _URL     = https://github.com/samtools/htslib/releases/download/$(_VERSION)
 _WRKSRC  = $(WORKDIR)/$(_NAME)-$(_VERSION)
