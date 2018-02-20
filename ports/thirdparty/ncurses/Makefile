@@ -22,7 +22,7 @@ do-clean-distfile:
 	rm -f $(_FILE)
 do-config: $(_WRKSRC)/config.log
 $(_WRKSRC)/config.log: | do-extract
-	(cd $(_WRKSRC) && CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)" CPP="gcc -E -P" ./configure --prefix=$(PREFIX) --with-shared 2>&1) \
+	(cd $(_WRKSRC) && CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)" CPP="gcc -E -P" ./configure --prefix=$(PREFIX) --disable-gnat-projects --without-ada --with-shared 2>&1) \
         >& config.log || $(PFHOME)/bin/diewith config.log
 	sleep 1
 do-build: $(_WRKSRC)/lib/libncurses.$(DYLIB)
