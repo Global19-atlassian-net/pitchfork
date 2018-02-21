@@ -9,7 +9,9 @@ _tmpvar:=$(if $(shell which pkg-config),exists,$(error "unable to run pkg-config
 #export PKG_CONFIG_PATH=$(PREFIX)/lib/pkgconfig
 _tmpvar:=$(if $(shell which freetype-config),exists,$(error "unable to run freetype-config, consider doing yum install freetype-devel"))
 LDFLAGS := $(LDFLAGS) $(shell freetype-config --libs|sed -e 's@ -lpng[0-9]*@@')
+CFLAGS += -O1
 export LDFLAGS
+export CFLAGS
 
 # Local works
 do-install: | $(PREFIX)/var/pkg/$(_NAME)
