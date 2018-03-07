@@ -9,6 +9,8 @@ $(_NAME)_REPO    ?= git://github.com/PacificBiosciences/$(_NAME)
 _WRKSRC           = $(WORKDIR)/$(_NAME)
 $(_NAME)_VERSION ?= HEAD
 _REVISION         = $(shell cd $(_WRKSRC) && $(GIT) rev-parse --short $($(_NAME)_VERSION) || true)
+LDFLAGS          += -pthread
+export LDFLAGS
 
 # Local works
 do-fetch: $(_WRKSRC)
@@ -57,7 +59,7 @@ $(PREFIX)/var/pkg/$(_NAME): | do-build
         pbcopper_LIBRARIES=$(PREFIX)/lib/libpbcopper.a \
                    VERBOSE=1 \
         $(PIP) install --verbose --upgrade --no-deps $(DEVOPT) $(_WRKSRC)/
-	@echo pip uninstall $(_NAME) >> $@
+	@echo pip uninstall ConsensusCore2 >> $@
 	@echo "# $(_REVISION)" >> $@
 do-clean:
 	$(MAKE) -C $(_WRKSRC)/_build clean || rm -rf $(_WRKSRC)/_build
