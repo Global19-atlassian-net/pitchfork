@@ -126,7 +126,7 @@ pbdagcon:     ccache dazzdb daligner pbbam blasr_libcpp gtest
 bam2fastx:    ccache pbbam htslib zlib boost cmake pbcopper
 minorseq:     ccache cmake pbcopper pbbam
 #
-pbcore:           pysam h5py
+pbcore:           pysam
 pbh5tools:        h5py pbcore
 pbbarcode:        pbh5tools pbcore numpy h5py
 pbcoretools:      pbcore pbcommand
