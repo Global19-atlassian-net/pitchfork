@@ -4,8 +4,8 @@ include ../../../mk/pitchfork.mk
 include ../../../mk/chkfc.mk
 
 # Local variables
-_NAME   = numpy-1.10.2
-_URL    = https://pypi.python.org/packages/source/n/numpy
+_NAME   = numpy-1.13.1
+_URL    = https://github.com/numpy/numpy/releases/download/v1.13.1
 _FILE   = $(_NAME).tar.gz
 _WRKSRC = $(WORKDIR)/$(_NAME)
 LDFLAGS = -L$(PREFIX)/lib

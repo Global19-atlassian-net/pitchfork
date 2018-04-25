@@ -22,6 +22,10 @@ PacBioBAM_LIBRARIES = $(PREFIX)/lib/libpbbam.$(DYLIB)
 else
 PacBioBAM_LIBRARIES = $(PREFIX)/lib/libpbbam.a
 endif
+CXXFLAGS += -I$(PREFIX)/src/htslib/include
+export CXXFLAGS
+LDFLAGS  += -L$(PREFIX)/src/htslib/lib
+export LDFLAGS
 
 # Local works
 ifeq ($(origin HAVE_BLASR),undefined)

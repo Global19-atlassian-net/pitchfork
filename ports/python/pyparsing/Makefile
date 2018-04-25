@@ -1,7 +1,7 @@
 include ../../../mk/pitchfork.mk
 
 # Local variables
-_VER    = 1.5.7
+_VER    = 2.2.0
 _NAME   = pyparsing-$(_VER)
 _WRKSRC = $(WORKDIR)/$(_NAME)
 
