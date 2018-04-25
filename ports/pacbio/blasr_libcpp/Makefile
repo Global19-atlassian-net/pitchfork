@@ -9,6 +9,8 @@ $(_NAME)_REPO    ?= git://github.com/PacificBiosciences/$(_NAME)
 _WRKSRC           = $(WORKDIR)/$(_NAME)
 $(_NAME)_VERSION ?= HEAD
 _REVISION         = $(shell cd $(_WRKSRC) && $(GIT) rev-parse --short $($(_NAME)_VERSION) || true)
+CXXFLAGS += "-I$(PREFIX)/src/htslib/include"
+export CXXFLAGS
 
 # Local works
 ifeq ($(origin HAVE_BLASR_LIBCPP),undefined)
