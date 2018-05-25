@@ -1,7 +1,7 @@
 include ../../../mk/pitchfork.mk
 
 # Local variables
-_VER    = 3.1.1
+_VER    = 3.4.2
 _NAME   = pillow-$(_VER)
 _WRKSRC = $(WORKDIR)/$(_NAME)
 
