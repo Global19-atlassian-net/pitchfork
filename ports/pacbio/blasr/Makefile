@@ -7,7 +7,7 @@ include ../../../mk/chkcxx.mk
 _NAME             = blasr
 $(_NAME)_REPO    ?= git://github.com/PacificBiosciences/$(_NAME)
 _WRKSRC           = $(WORKDIR)/$(_NAME)
-$(_NAME)_VERSION ?= HEAD
+$(_NAME)_VERSION ?= cccce3cf6afd01c2d2685795bb7356c206697889
 _REVISION         = $(shell cd $(_WRKSRC) && $(GIT) rev-parse --short $($(_NAME)_VERSION) || true)
 ifeq ($(OPSYS),FreeBSD)
 MAKE            := $(MAKE) DL_LIBFLAGS=''
