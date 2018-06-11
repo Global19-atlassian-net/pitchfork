@@ -7,7 +7,7 @@ include ../../../mk/chkcxx.mk
 _NAME             = blasr_libcpp
 $(_NAME)_REPO    ?= git://github.com/PacificBiosciences/$(_NAME)
 _WRKSRC           = $(WORKDIR)/$(_NAME)
-$(_NAME)_VERSION ?= HEAD
+$(_NAME)_VERSION ?= d18a48b00ef90f51fb38d596ac19121c3212b729
 _REVISION         = $(shell cd $(_WRKSRC) && $(GIT) rev-parse --short $($(_NAME)_VERSION) || true)
 CXXFLAGS += "-I$(PREFIX)/src/htslib/include"
 export CXXFLAGS
